@@ -52,5 +52,3 @@ class HMM:
                     zeta[i, j, t] = alpha[i,t]*a[i,j]*b[int(s[t+1]*10),j]*beta[j, t+1]/(eta[t+1]*np.sum(alpha[:,t]*beta[:,t]))
         return zeta
     
-    @staticmethod
-    def get_distribution()
